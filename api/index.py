@@ -16,7 +16,7 @@ chatgpt = ChatGPT()
 # Load keyword-response pairs
 keyword_response_dict = {}
 with open('1 EAP websites.csv', 'r') as file:
-    reader = csv.reader(f)
+    reader = csv.reader(file)
     next(reader)  # skip header
     for row in reader:
         keyword_response_dict[row[0]] = row[1]
